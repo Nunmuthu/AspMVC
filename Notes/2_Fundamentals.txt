@@ -95,5 +95,10 @@ ViewModel -> Wrap movie and customer list and pass it to movie
 16.Razor Syntax
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
+17.Partial Views:
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+@RenderBody()
+ https://github.com/mosh-hamedani/vidly-mvc-5
+ 
+ 
 
