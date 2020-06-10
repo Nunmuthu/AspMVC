@@ -23,7 +23,7 @@ namespace NunmuthuMVC
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-lumen.css",
+                      "~/Content/bootstrap_darkly.css",
                       "~/Content/site.css"));
         }
     }
