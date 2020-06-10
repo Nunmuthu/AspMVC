@@ -92,3 +92,8 @@ guid
 http://localhost:57027/Movies/Random
 ViewModel -> Wrap movie and customer list and pass it to movie
 
+16.Razor Syntax
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
