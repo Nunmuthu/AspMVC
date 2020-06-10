@@ -1,12 +1,16 @@
 ﻿@*@using NunmuthuMVC.Models*@
-@model NunmuthuMVC.Models.Movie
+@*@model NunmuthuMVC.Models.Movie*@
+@model NunmuthuMVC.ViewModels.RandomMovieViewModel
+
 
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name</h2>
+<h2>@Model.Movie.Name</h2>
+<h2>@Model.Customers[0].Name</h2>
+
 @*<h2>@( ((Movie) ViewData["Movie"]).Name )</h2>*@
 @*<h2></h2>*@
 

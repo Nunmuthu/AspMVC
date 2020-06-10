@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NunmuthuMVC.Models;
+using NunmuthuMVC.ViewModels;
 
 namespace NunmuthuMVC.Controllers
 {
@@ -14,9 +15,21 @@ namespace NunmuthuMVC.Controllers
         {
             var movie = new Movie() { Name = "Aladdin" };
             //ViewData["Movie"] = movie;
-            ViewBag.RandomMovie = movie;
-            return View();
-            //return View(movie);
+            //ViewBag.RandomMovie = movie;
+            //return View();
+            var customers = new List<Customer>
+            {
+                new Customer {Name="Customer 1"},
+                new Customer {Name="Customer 2"}
+
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+            return View(viewModel);
         }
 
         public ActionResult Edit(int movieId)

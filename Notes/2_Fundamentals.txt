@@ -49,7 +49,7 @@ pageIndex=1&sortBy=hello
 http://localhost:57027/Movies/Index/?pageIndex=2&sortBy=hello
 pageIndex=2&sortBy=hello
 
-14.Convetion based routing -> Custom routes
+12.Convetion based routing -> Custom routes
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 http://localhost:57027/movies/released/2020/06
@@ -61,7 +61,7 @@ http://localhost:57027/movies/released/2020/6 -> error because of constraint
 
                 new { year=@"2015|2016", month=@"\d{2}"}
 				
-15.Attribute Routing
+13.Attribute Routing
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             //Enable attribute routing
             routes.MapMvcAttributeRoutes();
@@ -78,7 +78,7 @@ int
 float
 guid
 
-16.Passing Data to views -> Few ways to pass data to the views
+14.Passing Data to views -> Few ways to pass data to the views
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 1.ViewData tyepe viewDataDictionary
             ViewData["Movie"] = movie;
@@ -86,3 +86,9 @@ guid
             //return View(movie);
 2.ViewBag
 3.Model
+
+15.View Models
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+http://localhost:57027/Movies/Random
+ViewModel -> Wrap movie and customer list and pass it to movie
+
