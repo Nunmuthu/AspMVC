@@ -1,0 +1,66 @@
+2.MVC Architectural pattern
++++++++++++++++++++++++++++++++++++++++++++++++==
+Router -> Selects the right controller. when a request comes.
+3.Setting up the development environment:
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Tools -> Extensions and updates
+
+Productivity Power Tools
+Web Essentials
+
+4. Your First MVC APP:
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+File -> New ->  Project -> Templates>Visual c#> Web>ASP.Net Web application
+
+Gave name of the project
+Choose location of project
+
+Check Add to source control
+Click Ok
+
+Select Templates
+	MVC
+
+Uncheck host in the cloud
+
+
+Explanation:
+APP_DATA -> Database files
+APP_START > RouteConfig.cs -> All router configs
+Content -> client side assets
+Controllers -> default controllers in it
+	AccountController.cs -> actions which has login,logout,signup,signin
+	HomeController.cs -> Which represent the home page
+	ManageController.cs -> Provides no of actions, handling request around users profile, changing passport, enabling two factor authentication , social login and so on
+fonts ->
+Models -> All domain class will be here
+Scripts -> All js files stores here
+Views -> Finally all views stored here
+favicon.ico -> icon of the application to display
+Global.asax -> class that provides hooks for various events with application life cycle
+	Global.asax.cs -> when the application started this method will be called Application_Start
+		It Register few things like route
+Package.config -> which is used by nuget package manager
+startup.cs -> drop Global.asax and all logic should come in startup.cs
+web.config -> which is an XML, that include the configuration for the application
+	<configuration>
+		<ConnectionStrings>To define database connections
+		</ConnectionStrings>
+		<AppSettings>To define the configuartion for app
+		</AppSettings>
+	</configuration>
+	
+5. MVC in actions
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Scaffolding -> predefined set of codes
+				used in controller creation
+
+https://localhost:44394/Movies/Random
+
+6.Adding a theme
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+By deault it uses bootstrap template
+bootswatch.com
+
+https://bootswatch.com/yeti/

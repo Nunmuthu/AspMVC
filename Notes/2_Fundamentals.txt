@@ -1,0 +1,52 @@
+9. introduction
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing
+View
+View Models
+10.Action Results -> output of actions
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Controller
+ActionResult is the base class for all action resultss in Asp.net mVC
+View -> Inherited from the base method Controller class
+ActionResult -> we can change it to ViewResult
+
+Type -> Helper Method
+ViewResult -> View()
+PartialViewResult -> PartialView()
+ContentResult -> Content()
+RedirectResult -> Redirect()
+RedirectToRouteResult -> RedirectToAction()
+JsonResult -> Json()
+FileResult -> File()
+HttpNotFoundResult -> HttpNotFound()
+
+EmptyResult
+
+11.Action Parameters -> Input of action
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Parameter Sources:
+In the Url: movies/edit/1
+In the query string: movies/edit?id=1
+In the form data: id=1
+
+http://localhost:57027/Movies/Edit/1
+http://localhost:57027/Movies/Edit?id=1
+
+http://localhost:57027/Movies/Edit?movieid=1
+
+
+id name inherits from RoutingConfig.cs
+
+int? pageIndex, string  sortBy
+In C# string type is nullable. so no need to specify optional
+
+http://localhost:57027/Movies/Index/
+pageIndex=1&sortBy=Name
+
+http://localhost:57027/Movies/Index/?sortBy=hello
+pageIndex=1&sortBy=hello
+
+http://localhost:57027/Movies/Index/?pageIndex=2&sortBy=hello
+pageIndex=2&sortBy=hello
+
+
