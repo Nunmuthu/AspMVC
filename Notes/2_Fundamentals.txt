@@ -78,3 +78,11 @@ int
 float
 guid
 
+16.Passing Data to views -> Few ways to pass data to the views
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.ViewData tyepe viewDataDictionary
+            ViewData["Movie"] = movie;
+            return View();
+            //return View(movie);
+2.ViewBag
+3.Model

@@ -13,7 +13,10 @@ namespace NunmuthuMVC.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Aladdin" };
-            return View(movie);
+            //ViewData["Movie"] = movie;
+            ViewBag.RandomMovie = movie;
+            return View();
+            //return View(movie);
         }
 
         public ActionResult Edit(int movieId)

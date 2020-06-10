@@ -1,4 +1,5 @@
-﻿@model NunmuthuMVC.Models.Movie
+﻿@*@using NunmuthuMVC.Models*@
+@model NunmuthuMVC.Models.Movie
 
 @{
     ViewBag.Title = "Random";
@@ -6,4 +7,6 @@
 }
 
 <h2>@Model.Name</h2>
+@*<h2>@( ((Movie) ViewData["Movie"]).Name )</h2>*@
+@*<h2></h2>*@
 
