@@ -1,0 +1,35 @@
+22.Introduction
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Goging to add entity framework
+
+23.Entity Framework
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ORM
+Objects <--> Object/RelationalMapper <--> Relational Data
+DbContext -> Gateway to our database
+DbSet -> Table
+
+LINQ:
+Linq		Sql
+----->DBset---->Database
+
+24.Database first vs Code first -> Entity framework workflow
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Code First:
+-> Increased Productivity
+-> Full Versioning of database
+-> Much Easier to build integration test db
+
+25. Code First Migrations:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Issue faced:
+Install-Package EntityFramework -IncludePrerelease
+
+https://stackoverflow.com/questions/10411529/package-manager-console-enable-migrations-commandnotfoundexception-only-in-a-spe
+
+Issue faced:
+Added user based authentication module:
+Install-Package Microsoft.AspNet.Identity.Core -Pre
+
+https://stackoverflow.com/questions/16808438/the-type-or-namespace-name-aspnet-does-not-exist-in-the-namespace-microsoft

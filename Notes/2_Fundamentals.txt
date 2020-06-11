@@ -100,5 +100,17 @@ ViewModel -> Wrap movie and customer list and pass it to movie
 @RenderBody()
  https://github.com/mosh-hamedani/vidly-mvc-5
  
- 
+20. Solution:
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.WHat is IEnumerable?
+https://msdn.microsoft.com/en-us/library/system.collections.ienumerable%28v=vs.110%29.aspx
+
+21.Summary
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Action Results
+Action Parameters
+Convention-based Routing
+Attribute Routing
+Razor Views
+
 
